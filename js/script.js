@@ -37,5 +37,11 @@ if (lowerCase === false && upperCase === false && numericCase === false && speci
     if (specialCase === true) passwordOptions = password
 }
 
+// While loop with alert for password length
+while(passwordLength <8 || passwordLength > 128) {
+    alert("Password length must be between 8-128.");
+    passwordLength = prompt("How many characters between 8-128 would you like your password?");
+}
+
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
