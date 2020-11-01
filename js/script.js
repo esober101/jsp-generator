@@ -28,13 +28,13 @@ var numeric = ["1", "2", "3", "4", "5", "6", "7", "8", "9"];
 var special = ["!", "@", "#", "$", "%", "^", "&", "*","(",")","+"];
 
 // If else loop with alert for lowercase, uppercase, numeric, and special characters
-if (lowerCase === false && upperCase === false && numericCase === false && specialCase === false) {
-    alert("You must choose at least one attribute.");
-  } else {
-    if (lowerCase === true) passwordOptions = passwordOptions.concat(lower);
-    if (upperCase === true) passwordOptions = passwordOptions.concat(upper);
-    if (numericCase === true) passwordOptions = passwordOptions.concat(numeric);
-    if (specialCase === true) passwordOptions = passwordOptions.concat(special);
+if (lowerCase === true) passwordOptions = passwordOptions.concat(lower);
+if (upperCase === true) passwordOptions = passwordOptions.concat(upper);
+if (numericCase === true) passwordOptions = passwordOptions.concat(numeric);
+if (specialCase === true) passwordOptions = passwordOptions.concat(special);
+else if (lowerCase === false && upperCase === false && numericCase === false && specialCase === false) {
+  alert("You must choose at least one attribute.");
+  return null;
 }
 
 // While loop with alert for password length
