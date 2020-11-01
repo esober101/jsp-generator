@@ -43,5 +43,13 @@ while(passwordLength <8 || passwordLength > 128) {
     passwordLength = prompt("How many characters between 8-128 would you like your password?");
 }
 
+// Completed password variable
+var passwordComplete = [];
+for (var p = 0; p < passwordLength; ++p){
+  passwordComplete += (passwordOptions[Math.floor(Math.random() * passwordOptions.length)]);
+  
+}
+
+
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
