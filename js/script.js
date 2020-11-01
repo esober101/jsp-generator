@@ -50,6 +50,9 @@ for (var p = 0; p < passwordLength; ++p){
   
 }
 
+// Return password to browser
+return passwordComplete;
+}
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
