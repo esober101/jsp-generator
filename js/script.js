@@ -34,7 +34,7 @@ if (lowerCase === false && upperCase === false && numericCase === false && speci
     if (lowerCase === true) passwordOptions = passwordOptions.concat(lower);
     if (upperCase === true) passwordOptions = passwordOptions.concat(upper);
     if (numericCase === true) passwordOptions = passwordOptions.concat(numeric);
-    if (specialCase === true) passwordOptions = password
+    if (specialCase === true) passwordOptions = passwordOptions.concat(special);
 }
 
 // While loop with alert for password length
